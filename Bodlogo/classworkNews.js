@@ -87,9 +87,18 @@ let news = [
   },
 ];
 
-function findLatestNews(){
-    for (let i = 0; i < news.length){
+function findAuthor(){
+  let count = 0;
+  let filterAuthor = [];
+    for (let i = 0; i < news.length; i = i +1){
+      if(news[i].author == filterAuthor){
+        filterAuthor[count] = news[i];
+        count = count + 1;
+      }
 
     }
+    return filterAuthor;
     
 }
+let answer = findAuthor("Yalalt");
+console.log(answer)
