@@ -1,5 +1,7 @@
 let answer = 1;
-for (let i = 0; i < 4; i = i + 1){
-    answer = answer * 3;
+for (let i = 0; i < 4; i = i + 1) {
+  answer = answer * 3;
 }
-console.log(answer)
+console.log(answer);
+
+// Өгөгдсөн тооны n зэргийг ол. Input 3,4
