@@ -1,0 +1,3 @@
+function findSum(x){
+    answer = 
+}
