@@ -12,8 +12,8 @@
 function findPrime(min, max){
   let primeNum = [];
   let count = 0;
-  for (let i = min; i < max; i = i + 1){
-    if (min % (i+1) == 0 ){
+  for (let i = min; i <= max; i = i + 1){
+    if (findPrime(i)){
       primeNum[count]=i;
       count++;
     }
