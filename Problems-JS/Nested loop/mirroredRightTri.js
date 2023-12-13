@@ -1,15 +1,14 @@
-function mirrorRightTri(size){
-    let triSqr = "";
-    for(let i = 0; i<size; i++){
-        for(let j =0; j < size - i-1; j++){
-            triSqr += " ";
-        }
-        for (let j=0; j<=i; j++){
-            triSqr += "*";
-
-        }
-        triSqr += "\n";
+function mirrorRightTri(size) {
+  let triSqr = "";
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size - i - 1; j++) {
+      triSqr += " ";
     }
-    console.log(triSqr);
+    for (let j = 0; j <= i; j++) {
+      triSqr += "*";
+    }
+    triSqr += "\n";
+  }
+  console.log(triSqr);
 }
-mirrorRightTri(5)
+mirrorRightTri(5);
