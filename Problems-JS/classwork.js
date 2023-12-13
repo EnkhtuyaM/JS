@@ -90,7 +90,7 @@ let products = [
   },
 ];
 
-// function prodDiscount(products) {
+//1. function prodDiscount(products) {
 //   for (let i = 0; i < products.length; i = i + 1) {
 //     products[i].price = products[i].price * 0.9;
 //     console.log(products);
@@ -99,7 +99,7 @@ let products = [
 // let answer = prodDiscount(products);
 // console.log(answer);
 
-// function findByCategory(cate) {
+//2. function findByCategory(cate) {
 //   for (let i = 0; i < 10; i = i + 1) {
 //     if (products[i].category == cate) {
 //       console.log(products[i]);
@@ -109,7 +109,7 @@ let products = [
 
 // findByCategory("home");
 
-// function findExpensiveProd(products) {
+//3. function findExpensiveProd(products) {
 // let x = products[0].price;
 // function findMostExpensive() {
 //   for (let i = 0; i < 10; i = i + 1) {
@@ -122,13 +122,19 @@ let products = [
 // findMostExpensive();
 // findExpensiveProd(x);
 
-function findLowestStock() {
-  let y = products[0].stock;
-  for (let i = 0; i < 10; i = i + 1) {
-    if (products[i].stock < y) {
-      y = products[i].stock;
-    }
-  }
-  console.log(y);
-}
-findLowestStock();
+//4.(bodoj chadaagui oroldlogo tudii) function findLowestStock() {
+//   let y = products[0].stock;
+//   for (let i = 0; i < 10; i = i + 1) {
+//     if (products[i].stock < y) {
+//       y = products[i].stock;
+//     }
+//   }
+//   console.log(y);
+// }
+// findLowestStock();
+
+products.sort((prod1, prod2)=>{
+  return prod1.stock-prod2.stock
+
+})
+console.log(products)
