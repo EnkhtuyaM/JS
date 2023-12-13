@@ -128,3 +128,5 @@ let evenArr = nums.filter((a)=>{
 
 })
 console.log("evenArr:", evenArr)
+
+// filter methodiin map-s yalgaatai n zohiomol array uusgej chadahgui, zuvhun filter-dene
