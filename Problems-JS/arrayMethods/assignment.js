@@ -140,10 +140,19 @@ const employees = [
       performanceRating: 4.9,
     },
   ];
-  let highPaidEmployee = employees.map((a, b)=>{
-    return (a.salary)
+  let highPaidEmployee = employees.map((a)=>{
+    if(a.salary > 100000){
+      return highPaidEmployee
+    }
+    
 });
+
   console.log(highPaidEmployee)
+
+  // let mostHighPaid = highPaidEmployee.sort((a,b)=>{
+  //   return b.salary-a.salary
+  // })
+  // console.log(mostHighPaid)
   
 
 // let topPerformer = employees.map((a)=>{

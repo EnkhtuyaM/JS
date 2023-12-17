@@ -89,17 +89,19 @@ let products = [
       stock: 110,
     },
   ];
-//   let byBrands = products.filter((a)=>{
-//     return a.brand == "LG"
-//   })
-//   console.log("byBrands:", byBrands)
+  // let byBrands = products.filter((a)=>{
+  //   return a.brand == "LG"
+  // })
+  // console.log("byBrands:", byBrands)
 
-//   let prices=products.map((a)=>{
-//     return a.price
-//   });
-//   console.log("prices:", prices)
 
-  products.sort((prod1, prod2)=>{
-    return (prod1.price-prod2.price)
+  let prices=products.map((a)=>{
+    return [a.price]
   });
-  console.log(products)
+  console.log("prices:", prices)
+
+
+  // let prodPrice=products.sort((prod1, prod2)=>{
+  //   return (prod1.price-prod2.price)
+  // });
+  // console.log(prodPrice)

@@ -140,12 +140,23 @@ const bookData = [
     price: 17.99,
   },
 ];
-let findBook = bookData.filter((a) => {
-  return a.title.length > 20;
-});
-console.log("Books:", findBook);
-let findBookSorted = bookData.sort((a, b) => {
-  return a;
-});
+// let findBook = bookData.filter((a) => {
+//   return a.title.length > 20;
+// });
+
+
+// let findBookSorted = findBook.sort((a, b) => {
+//   return a.price-b.price
+// });
+
+// console.log(findBookSorted)
 
 // Book title iin character length ni 10 aas ihiin awdag function bich, tedgeeriin price range iig ni oor function oor garga
+
+let bookExp=bookData.filter((a)=>{
+  return a.price>12
+});
+let bookExpRate=bookExp.filter((a)=>{
+  return a.rating>4.7
+})
+console.log(bookExpRate)

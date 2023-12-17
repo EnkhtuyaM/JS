@@ -161,7 +161,17 @@ const bookData = [
 // });
 // console.log(bookLength);
 
-// // find Expensive book more than 12
+function addSummaryObject(inputData){
+  let addSummary= inputData.map((a)=>{
+    a.summary=a.title+"by"+a.author;
+    return a;
+  })
+
+}
+console.log(addObjectSummary(bookData))
+
+
+// // Bodlogo: find Expensive book more than 12
 // find 12-18 priced range books
 // sort books by rating
 // find more than 20 length books
