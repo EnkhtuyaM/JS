@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+div {
+  background-color: aqua;
+  display: flex;
+  padding-left: 10px;
+  margin: auto;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
