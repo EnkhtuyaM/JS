@@ -160,3 +160,5 @@ let bookExpRate=bookExp.filter((a)=>{
   return a.rating>4.7
 })
 console.log(bookExpRate)
+
+// 12 oos ih vnetei nomnuudaas rating ni 4.7 oos deesh rating tei nomnuudiig oldog function bich

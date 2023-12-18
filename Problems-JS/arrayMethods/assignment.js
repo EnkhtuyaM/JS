@@ -142,7 +142,7 @@ const employees = [
   ];
   let highPaidEmployee = employees.map((a)=>{
     if(a.salary > 100000){
-      return highPaidEmployee
+      return 
     }
     
 });

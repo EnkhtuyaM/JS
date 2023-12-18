@@ -1,12 +1,12 @@
 let nums=[1,6,5,4,8,7,9,1,22,21,25,45,48,49,27];
-// let newNums = nums.map((a)=>{
-//     if (a%3==0)
+let newNums = nums.map((a)=>{
+    if (a%3==0)
     
-//         return {name: "bayar", age:25}
-//     } 
-// )
-// console.log(newNums)
-// console.log(nums)
+        return {name: "bayar", age:25}
+    } 
+)
+console.log(newNums)
+console.log(nums)
 
 // let evenArr=nums.filter((a)=>{
 //     return a%2==0

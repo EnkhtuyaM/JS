@@ -121,7 +121,7 @@ let newNums = nums.map((a)=>{
 console.log (newNums);
 console.log(nums)
 
-// sort-s yalgaatai n nums-g eruusuu oroldohgui, shine array return-r uusgene
+// map n sort-s yalgaatai n nums-g eruusuu oroldohgui, shine array return-r uusgene
 
 let evenArr = nums.filter((a)=>{
     return a%2==0;
