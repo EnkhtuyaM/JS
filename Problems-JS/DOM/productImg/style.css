@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.root {
+  /* width: 900px;
+  height: 900px;
+  background-color: aqua; */
+}
+.card {
+  width: 350px;
+  height: 600px;
+  border: solid 1px grey;
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: aqua;
+}
+.card img {
+  width: 100%;
+}
+.card p {
+  /* font-size: 20px; */
+  display: flex;
+}
+.name {
+  font-size: 40px;
+  color: red;
+}
