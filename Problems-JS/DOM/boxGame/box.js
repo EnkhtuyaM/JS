@@ -19,3 +19,7 @@ function startGame() {
   root.appendChild(box);
   root.appendChild(diffBox);
 }
+
+for (let i=0; i<9; i++){
+  
+}
