@@ -179,7 +179,7 @@ const products = [
 
 // root.appendChild(cardDiv);
 
-function makeCards(products) {
+function makeCards(a) {
   const cardDiv = document.createElement("div");
   const cardName = document.createElement("p");
   const cardDesc = document.createElement("p");
@@ -188,20 +188,21 @@ function makeCards(products) {
   const cardBrand = document.createElement("p");
 
   cardDiv.setAttribute("class", "card");
-  cardName.innerText = products[0].name;
-  cardDesc.innerText = products[0].description;
-  cardBrand.innerText = products[0].brand;
-  cardPrice.innerText = products[0].price;
-  cardImg.setAttribute("src", products[0].image_url);
+  cardName.innerText = a.name;
+  cardDesc.innerText = a.description;
+  cardBrand.innerText = a.brand;
+  cardPrice.innerText = a.price;
+  cardImg.setAttribute("src", a.image_url);
 
   cardDiv.appendChild(cardName);
-  cardDiv.appendChild(cardDesc);
+
   cardDiv.appendChild(cardBrand);
   cardDiv.appendChild(cardImg);
   cardDiv.appendChild(cardPrice);
+  cardDiv.appendChild(cardDesc);
 
   return cardDiv;
 }
 products.map((a) => {
-  root.appendChild(makeCards(products));
+  root.appendChild(makeCards(a));
 });
