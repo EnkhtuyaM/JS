@@ -1,25 +1,42 @@
+const root = document.getElementById("root");
+
+//Munkuu's style
+// startSetup();
+// function startSetup() {
+//   const startButton = document.createElement("button");
+//   startButton.innerText = "Start";
+//   startButton.setAttribute("class", "startButton");
+//   startButton.addEventListener("click", startGame);
+//   root.appendChild(startButton);
+// }
+
 const startButton = document.createElement("button");
 startButton.innerText = "Start";
-root.appendChild(startButton);
+startButton.setAttribute("class", "startButton");
 startButton.addEventListener("click", startGame);
+root.appendChild(startButton);
+
+const boxes = document.createElement("div");
+boxes.setAttribute("class", "boxes");
+root.appendChild(boxes);
 
 function startGame() {
-  const box = document.createElement("div");
-  const diffBox = document.createElement("div");
-  const red = Math.floor(Math.random() * 245) + 10;
-  const green = Math.floor(Math.random() * 255);
-  const blue = Math.floor(Math.random() * 255);
+  boxes.innerHTML = "";
+  const red = Math.floor(Math.random() * 205) + 50;
+  const green = Math.floor(Math.random() * 205) + 50;
+  const blue = Math.floor(Math.random() * 205) + 50;
   const randomColor = `rgb(${red},${green},${blue})`;
-  const differentColor = `rgb(${red},${green},${blue})`;
-
-  box.setAttribute("class", "box");
-  diffBox.setAttribute("class", "box");
-  box.style.backgroundColor = randomColor;
-  diffBox.style.backgroundColor = differentColor;
-  root.appendChild(box);
-  root.appendChild(diffBox);
-}
-
-for (let i=0; i<9; i++){
-  
+  const differentColor = `rgb(${red - 50},${green - 50},${blue - 50})`;
+  const random = Math.floor(Math.random() * 8);
+  for (let i = 0; i < 9; i++) {
+    const box = document.createElement("div");
+    box.setAttribute("class", "box");
+    if (i == random) {
+      box.style.backgroundColor = differentColor;
+      box.addEventListener("click", startGame);
+    } else {
+      box.style.backgroundColor = randomColor;
+    }
+    boxes.appendChild(box);
+  }
 }
