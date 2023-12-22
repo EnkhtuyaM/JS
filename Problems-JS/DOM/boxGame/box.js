@@ -22,9 +22,9 @@ root.appendChild(boxes);
 
 function startGame() {
   boxes.innerHTML = "";
-  const red = Math.floor(Math.random() * 205) + 50;
-  const green = Math.floor(Math.random() * 205) + 50;
-  const blue = Math.floor(Math.random() * 205) + 50;
+  const red = Math.floor(Math.random() * 235) + 20;
+  const green = Math.floor(Math.random() * 235) + 20;
+  const blue = Math.floor(Math.random() * 235) + 20;
   const randomColor = `rgb(${red},${green},${blue})`;
   const differentColor = `rgb(${red - 50},${green - 50},${blue - 50})`;
   const random = Math.floor(Math.random() * 8);
