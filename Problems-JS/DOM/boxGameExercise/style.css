@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.root{
+    width: 400px;
+    height: 400px;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.box {
+    width: 50%;
+    height: 50%;
+}
+button {
+    width: 100px;
+    height: 45px;
+    background-color: green;
+    font-size: 24px;
+}
