@@ -1,15 +1,4 @@
 const root = document.getElementById("root");
-
-//Munkuu's style
-// startSetup();
-// function startSetup() {
-//   const startButton = document.createElement("button");
-//   startButton.innerText = "Start";
-//   startButton.setAttribute("class", "startButton");
-//   startButton.addEventListener("click", startGame);
-//   root.appendChild(startButton);
-// }
-
 const startButton = document.createElement("button");
 startButton.innerText = "Start";
 startButton.setAttribute("class", "startButton");
@@ -40,3 +29,14 @@ function startGame() {
     boxes.appendChild(box);
   }
 }
+
+
+//Munkuu's style
+// startSetup();
+// function startSetup() {
+//   const startButton = document.createElement("button");
+//   startButton.innerText = "Start";
+//   startButton.setAttribute("class", "startButton");
+//   startButton.addEventListener("click", startGame);
+//   root.appendChild(startButton);
+// }
