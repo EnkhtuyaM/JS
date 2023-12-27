@@ -157,7 +157,7 @@ const employeeslist = () => {
     performanceRating.innerText =
       "Performance Rate:" + employee.performanceRating;
 
-    // root.appendChild(employeeslist);
+  
     root.appendChild(employeeName);
     root.appendChild(position);
     root.appendChild(salary);

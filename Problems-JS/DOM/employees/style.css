@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
 }
-.root {
+/* .root {
   display: flex;
   gap: 10px;
   margin-left: 20px;
-}
+} */
 div {
   display: flex;
   flex-direction: column;
