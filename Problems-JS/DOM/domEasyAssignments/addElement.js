@@ -8,7 +8,7 @@ const squares=document.createElement("div");
 squares.setAttribute("class","squares")
 root.appendChild(squares)
 
-function addSquare = (){
+function addSquare (){
     squares.innerText="1"
     for(let i=0; i<12; i++){
         const square=document.createElement("div"); 
