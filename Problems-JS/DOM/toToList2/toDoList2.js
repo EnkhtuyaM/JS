@@ -1,12 +1,6 @@
-let taskArr=[
-    {}
-];
+let taskArr = [{}];
 
-function helper(element,tag,className,idName,append){
-    let element=document.createElement(element)
-    element.
-    
+function helper(element, tag, className, idName, append) {
+  let element = document.createElement(element);
 }
-function render(taskArr){
-
-}
+function render(taskArr) {}
