@@ -10,7 +10,7 @@ let todos = [
     status: "in progress",
   },
   {
-    title: "Stuck",
+    title: "Comple",
     description: "task3",
     status: "stuck",
   },
